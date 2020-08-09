@@ -61,7 +61,7 @@ module.exports = {
         name: `Software things I've learned by J. Kuś`,
         short_name: `jkusBlog`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#282c34`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,

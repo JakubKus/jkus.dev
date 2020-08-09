@@ -1,15 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Software things I've learned by J. Kuś`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jakub Kuś`,
+      tagline1: `Software things I've learned.`,
+      tagline2: `And my projects.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `Software things I've learned by J. Kuś`,
+    siteUrl: `https://jkus-blog.vercel.app/`,
   },
   plugins: [
     {
@@ -53,17 +51,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-174983582-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Software things I've learned by J. Kuś`,
+        short_name: `jkusBlog`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#282c34`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,

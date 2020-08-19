@@ -1,5 +1,5 @@
 html {
-  background-color: #282c34;
+  background-color: #333;
   overflow-y: auto;
 }
 
@@ -11,10 +11,22 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, li, div {
   font-family: Montserrat, sans-serif;
 }
 
+code * {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
 a {
-  color: rgb(152, 204, 98);
+  color: rgb(50, 205, 50);
   text-decoration: none;
   box-shadow: none;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+hr {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 blockquote {
@@ -22,8 +34,12 @@ blockquote {
   border-color: inherit;
 }
 
+p, .gatsby-highlight {
+  margin-bottom: 1.75rem;
+}
+
 .gatsby-highlight-code-line {
-  display: inline-block;
+  display: block;
   width: 100%;
-  background: rgba(152, 204, 98, 0.15);
+  background: rgba(50, 205, 50, 0.15);
 }

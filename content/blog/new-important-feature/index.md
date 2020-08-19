@@ -42,7 +42,6 @@ let hideRandomMeal = !(allrecipesFound && simplyrecipesFound && tasteofhomeFound
 <a className={simplyrecipesFound} href={this.state.simplyrecipes.toString()}>SimplyRecipes.com</a>  
 <a className={tasteofhomeFound} href={this.state.tasteofhome.toString()}>TasteOfHome.com</a>
 ```
-<br>
 
 And basically that's all I needed to make this satysfying (for me) feature. Oh 
 wait, I also changed my CSS styling file into SCSS. I'm new to it and I know 

@@ -2,7 +2,7 @@
 title: "Koans completed"
 date: "2018-04-21"
 description: "Welcome! As title says, I completed React.js Koans created by 
-awesome group of software developers called [Arkency](https://arkency.com)." 
+awesome group of software developers called Arkency." 
 ---
 
 Welcome!\

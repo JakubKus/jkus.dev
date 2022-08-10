@@ -11,6 +11,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, a, li, div {
   font-family: Montserrat, sans-serif;
 }
 
+code[class*=language-], pre[class*=language-] {
+  word-break: break-word;
+}
+
 code * {
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }

@@ -12,7 +12,7 @@ const Avatar = () => {
       <img src={author.picture} className="w-12 h-12 rounded-full mr-4" alt="author image" />
       <div>
         {author.bioLines.map((line) => (
-          <p className="text-base leading-7 tracking-wide">{line}</p>
+          <p key={line} className="text-base leading-7 tracking-wide">{line}</p>
         ))}
       </div>
     </div>

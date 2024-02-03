@@ -1,31 +1,31 @@
-import { useRouter } from "next/router";
-import ErrorPage from "next/error";
-import Container from "../../components/container";
-import PostBody from "../../components/post-body";
-import Header from "../../components/header";
-import PostHeader from "../../components/post-header";
-import Layout from "../../components/layout";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
-import PostTitle from "../../components/post-title";
-import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
-import markdownToHtml from "../../lib/markdownToHtml";
-import type PostType from "../../interfaces/post";
+import { useRouter } from 'next/router';
+import ErrorPage from 'next/error';
+import Container from '../../components/container';
+import PostBody from '../../components/post-body';
+import Header from '../../components/header';
+import PostHeader from '../../components/post-header';
+import Layout from '../../components/layout';
+import { getAdjacentPosts, getAllPosts, getPostBySlug } from '../../lib/api';
+import PostTitle from '../../components/post-title';
+import Head from 'next/head';
+import markdownToHtml from '../../lib/markdownToHtml';
+import type PostType from '../../interfaces/post';
+import type { PostLinkType } from '../../interfaces/post-link';
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
-  preview?: boolean;
+  prevPost: PostLinkType;
+  nextPost: PostLinkType;
 };
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, prevPost, nextPost }: Props) {
   const router = useRouter();
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${post.title} | Software things I've learned by J. Kuś`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
         <Header />
         {router.isFallback ? (
@@ -37,7 +37,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 <title>{title}</title>
               </Head>
               <PostHeader title={post.title} date={post.date} />
-              <PostBody content={post.content} />
+              <PostBody content={post.content} prevPost={prevPost} nextPost={nextPost} />
             </article>
           </>
         )}
@@ -57,12 +57,11 @@ export async function getStaticProps({ params }: Params) {
     "title",
     "date",
     "slug",
-    "author",
     "content",
-    "ogImage",
-    "coverImage",
   ]);
   const content = await markdownToHtml(post.content || "");
+
+  const { prevPost, nextPost } = getAdjacentPosts(params.slug, 'date', ['slug', 'title']);
 
   return {
     props: {
@@ -70,6 +69,8 @@ export async function getStaticProps({ params }: Params) {
         ...post,
         content,
       },
+      prevPost,
+      nextPost,
     },
   };
 }

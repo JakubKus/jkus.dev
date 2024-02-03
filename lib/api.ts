@@ -37,6 +37,21 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
+export function getAdjacentPosts(targetSlug: string, compareBy: string, fields: string[] = []) {
+  const slugs = getPostSlugs();
+  const sortedPosts = slugs
+    .map((slug) => getPostBySlug(slug, fields.concat(compareBy)))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1[compareBy] > post2[compareBy] ? -1 : 1));
+
+  const targetIdx = sortedPosts.findIndex(post => post.slug === targetSlug);
+
+  const prevPost = targetIdx > 0 ? sortedPosts[targetIdx - 1] : null;
+  const nextPost = targetIdx < sortedPosts.length - 1 ? sortedPosts[targetIdx + 1] : null;
+
+  return { prevPost, nextPost };
+}
+
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
   const posts = slugs

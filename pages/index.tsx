@@ -15,11 +15,10 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Software things I've learned by J. Kuś</title>
+          <title>Software things I&apos;ve learned by J. Kuś</title>
         </Head>
         <Container>
           <Avatar />
-          <br />
           <Posts posts={allPosts} />
         </Container>
       </Layout>

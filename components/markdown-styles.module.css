@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-base leading-7;
 }
 
 .markdown p,
@@ -9,10 +9,24 @@
   @apply my-6;
 }
 
+.markdown li {
+  @apply my-1;
+}
+
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown :not(pre)>code {
+  @apply rounded p-1 bg-code-bg;
+}
+
+.markdown .remark-highlight-code-line {
+  background: rgba(50,205,50,.15);
+  display: block;
+  width: 100%;
 }

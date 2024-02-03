@@ -32,7 +32,7 @@ export default function Post({ post, prevPost, nextPost }: Props) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-16">
               <Head>
                 <title>{title}</title>
               </Head>

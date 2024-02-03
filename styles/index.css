@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-accent-2 hover:no-underline;
+  }
+  @font-face {
+    font-family: Montserrat;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+}
+
+.remark-highlight-code-line {
+  @apply bg-grey-bg-light w-full block;
+}

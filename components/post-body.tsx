@@ -40,7 +40,7 @@ const PostLink = ({ post, prefix, suffix, alignRight }: PostLinkProps) => {
   const alignClass = alignRight ? "ml-auto text-right" : "";
 
   return (
-    <Link href="/posts/[slug]" as={`/posts/${post.slug}`} className={`flex items-center gap-x-2 ${alignClass}`}>
+    <Link href="/blog/[slug]" as={`/blog/${post.slug}`} className={`flex items-center gap-x-2 ${alignClass}`}>
       {prefix && <span>{prefix}</span>}
       <span>{post.title}</span>
       {suffix && <span>{suffix}</span>}

@@ -18,8 +18,8 @@ const PostPreview = ({
     <div>
       <h3 className="text-2xl mb-1 leading-snug font-extrabold">
         <Link
-          as={`/blog/${slug}`}
-          href="/blog/[slug]"
+          as={`/${slug}`}
+          href="/[slug]"
         >
           {title}
         </Link>

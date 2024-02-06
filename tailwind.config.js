@@ -11,6 +11,7 @@ module.exports = {
         "grey-bg": "#333",
         "grey-bg-light": "rgb(50 205 50 / 10%)",
         "code-bg": "#272822",
+        "divider": "rgb(255 255 255 / 30%)",
       },
       spacing: {
         28: "7rem",

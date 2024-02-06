@@ -16,7 +16,7 @@ const PostBody = ({ content, prevPost, nextPost }: Props) => {
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-      <hr className="border-black mb-6" />
+      <hr className="border-divider mb-6" />
       <div className="block mb-6">
         <Avatar />
       </div>

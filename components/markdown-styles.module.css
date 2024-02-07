@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base leading-7;
+  @apply text-base leading-7 break-words;
 }
 
 .markdown p,

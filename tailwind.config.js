@@ -7,11 +7,11 @@ module.exports = {
     extend: {
       colors: {
         "accent-1": "rgb(255 255 255 / 90%)",
-        "accent-2": "#32cd32",
-        "grey-bg": "#333",
-        "grey-bg-light": "rgb(50 205 50 / 10%)",
-        "code-bg": "#272822",
-        "divider": "rgb(255 255 255 / 30%)",
+        "accent-1-light": "rgb(255 255 255 / 30%)",
+        "accent-2": "rgb(50 205 50)",
+        "accent-2-light": "rgb(50 205 50 / 10%)",
+        "accent-3": "rgb(51 51 51)",
+        "accent-4": "rgb(39 40 34)",
       },
       spacing: {
         28: "7rem",

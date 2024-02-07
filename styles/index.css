@@ -18,5 +18,5 @@
 }
 
 .remark-highlight-code-line {
-  @apply bg-grey-bg-light w-full block;
+  @apply bg-accent-2-light w-full block;
 }

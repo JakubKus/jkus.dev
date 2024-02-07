@@ -1,5 +1,5 @@
 import markdownStyles from './markdown-styles.module.css';
-import Avatar from './avatar';
+import AvatarWithBio from './avatarWithBio';
 import type { PostLinkType } from '../interfaces/post-link';
 import Link from 'next/link';
 
@@ -18,7 +18,7 @@ const PostBody = ({ content, prevPost, nextPost }: Props) => {
       />
       <hr className="border-accent-1-light mb-6" />
       <div className="block mb-6">
-        <Avatar />
+        <AvatarWithBio />
       </div>
       <ul className="flex justify-between gap-x-3">
         <PostLink post={prevPost} prefix="←" />

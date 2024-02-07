@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
-import Avatar from '../components/avatar';
+import AvatarWithBio from '../components/avatarWithBio';
 import { HEADLINE } from '../lib/constants';
 
 type Props = {
@@ -19,7 +19,7 @@ export default function Index({ allPosts }: Props) {
           <title>{HEADLINE}</title>
         </Head>
         <Container>
-          <Avatar />
+          <AvatarWithBio />
           <Posts posts={allPosts} />
         </Container>
       </Layout>

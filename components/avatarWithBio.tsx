@@ -6,7 +6,7 @@ const author = {
   bioLines: BIO_LINES,
 };
 
-const Avatar = () => {
+const AvatarWithBio = () => {
   return (
     <div className="flex items-center">
       <Image
@@ -25,4 +25,4 @@ const Avatar = () => {
   );
 };
 
-export default Avatar;
+export default AvatarWithBio;

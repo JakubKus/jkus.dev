@@ -11,6 +11,7 @@ import Head from 'next/head';
 import markdownToHtml from '../lib/markdownToHtml';
 import type PostType from '../interfaces/post';
 import type { PostLinkType } from '../interfaces/post-link';
+import { HEADLINE } from '../lib/constants';
 
 type Props = {
   post: PostType;
@@ -20,7 +21,7 @@ type Props = {
 
 export default function Post({ post, prevPost, nextPost }: Props) {
   const router = useRouter();
-  const title = `${post.title} | Software things I've learned by J. Kuś`;
+  const title = `${post.title} | ${HEADLINE}`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { HEADLINE } from '../lib/constants';
 
 const Meta = () => {
   return (
@@ -22,7 +23,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content="Software things I've learned by J. Kuś"
+        content={HEADLINE}
       />
     </Head>
   );

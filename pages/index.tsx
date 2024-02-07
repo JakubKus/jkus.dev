@@ -5,6 +5,7 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
 import Avatar from '../components/avatar';
+import { HEADLINE } from '../lib/constants';
 
 type Props = {
   allPosts: Post[];
@@ -15,7 +16,7 @@ export default function Index({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Software things I&apos;ve learned by J. Kuś</title>
+          <title>{HEADLINE}</title>
         </Head>
         <Container>
           <Avatar />

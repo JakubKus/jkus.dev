@@ -17,8 +17,10 @@ const AvatarWithBio = () => {
         width={48}
       />
       <div>
-        {author.bioLines.map((line) => (
-          <p key={line} className="text-base leading-7 tracking-wide">{line}</p>
+        {author.bioLines.map(line => (
+          <p key={line} className="text-base leading-7 tracking-wide">
+            {line}
+          </p>
         ))}
       </div>
     </div>

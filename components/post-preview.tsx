@@ -1,5 +1,5 @@
-import DateFormatter from "./date-formatter";
-import Link from "next/link";
+import DateFormatter from './date-formatter';
+import Link from 'next/link';
 
 type Props = {
   title: string;
@@ -8,19 +8,11 @@ type Props = {
   slug: string;
 };
 
-const PostPreview = ({
-  title,
-  date,
-  excerpt,
-  slug,
-}: Props) => {
+const PostPreview = ({ title, date, excerpt, slug }: Props) => {
   return (
     <div>
       <h3 className="text-2xl mb-1 leading-snug font-extrabold">
-        <Link
-          as={`/${slug}`}
-          href="/[slug]"
-        >
+        <Link as={`/${slug}`} href="/[slug]">
           {title}
         </Link>
       </h3>

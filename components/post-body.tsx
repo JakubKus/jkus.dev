@@ -12,10 +12,7 @@ type Props = {
 const PostBody = ({ content, prevPost, nextPost }: Props) => {
   return (
     <div className="max-w-2xl mx-auto">
-      <div
-        className={markdownStyles["markdown"]}
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
+      <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: content }} />
       <hr className="border-accent-1-light mb-6" />
       <div className="block mb-6">
         <AvatarWithBio />
@@ -37,7 +34,7 @@ type PostLinkProps = {
 
 const PostLink = ({ post, prefix, suffix, alignRight }: PostLinkProps) => {
   if (!post) return null;
-  const alignClass = alignRight ? "ml-auto text-right" : "";
+  const alignClass = alignRight ? 'ml-auto text-right' : '';
 
   return (
     <Link href="/[slug]" as={`/${post.slug}`} className={`flex items-center gap-x-2 ${alignClass}`}>
@@ -46,6 +43,6 @@ const PostLink = ({ post, prefix, suffix, alignRight }: PostLinkProps) => {
       {suffix && <span>{suffix}</span>}
     </Link>
   );
-}
+};
 
 export default PostBody;

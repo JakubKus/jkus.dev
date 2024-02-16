@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { HEADLINE } from '../lib/constants';
+import { HEADLINE } from '../constants';
 
 const Meta = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BIO_LINES } from '../lib/constants';
+import { BIO_LINES } from '../../constants';
 
 const author = {
   picture: '/assets/blog/author/jakub.jpg',
@@ -8,17 +8,17 @@ const author = {
 
 const AvatarWithBio = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center pr-4">
       <Image
         src={author.picture}
         className="w-12 h-12 rounded-full mr-4"
-        alt="author (Jakub Kuś) profile picture"
+        alt="Jakub Kuś profile picture"
         height={48}
         width={48}
       />
       <div>
         {author.bioLines.map(line => (
-          <p key={line} className="text-base leading-7 tracking-wide">
+          <p key={line} className="text-sm 2xl:text-base leading-tight tracking-wide text-white">
             {line}
           </p>
         ))}

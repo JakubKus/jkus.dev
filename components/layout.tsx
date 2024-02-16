@@ -1,6 +1,7 @@
 import Meta from './meta';
 import React from 'react';
 import Footer from './footer';
+import Navbar from './navigation/navbar';
 
 type Props = {
   children: React.ReactNode;
@@ -10,7 +11,8 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen mt-8 max-w-2xl mx-auto">
+      <Navbar />
+      <div className="min-h-screen mt-8">
         <main>{children}</main>
       </div>
       <Footer />

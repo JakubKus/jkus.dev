@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Container = ({ children }: Props) => {
-  return <div className="mx-auto px-5">{children}</div>;
+  return <div className="mx-auto px-pageSpacing max-w-2xl box-content">{children}</div>;
 };
 
 export default Container;

@@ -1,17 +1,17 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Container from '../components/container';
-import PostBody from '../components/post-body';
+import PostBody from '../components/blog/post-body';
 import Header from '../components/header';
-import PostHeader from '../components/post-header';
+import PostHeader from '../components/blog/post-header';
 import Layout from '../components/layout';
 import { getAdjacentPosts, getAllPosts, getPostBySlug } from '../lib/api';
-import PostTitle from '../components/post-title';
+import PostTitle from '../components/blog/post-title';
 import Head from 'next/head';
 import markdownToHtml from '../lib/markdownToHtml';
 import type PostType from '../interfaces/post';
 import type { PostLinkType } from '../interfaces/post-link';
-import { HEADLINE } from '../lib/constants';
+import { HEADLINE, SHORT_HEADLINE } from '../constants';
 
 type Props = {
   post: PostType;
@@ -21,7 +21,7 @@ type Props = {
 
 export default function Post({ post, prevPost, nextPost }: Props) {
   const router = useRouter();
-  const title = `${post.title} | ${HEADLINE}`;
+  const title = `${SHORT_HEADLINE} - ${post.title}`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }

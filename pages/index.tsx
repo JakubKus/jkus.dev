@@ -1,11 +1,10 @@
 import Container from '../components/container';
-import Posts from '../components/posts';
+import Posts from '../components/blog/posts';
 import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
 import Post from '../interfaces/post';
-import AvatarWithBio from '../components/avatarWithBio';
-import { HEADLINE } from '../lib/constants';
+import { HEADLINE } from '../constants';
 
 type Props = {
   allPosts: Post[];
@@ -19,7 +18,6 @@ export default function Index({ allPosts }: Props) {
           <title>{HEADLINE}</title>
         </Head>
         <Container>
-          <AvatarWithBio />
           <Posts posts={allPosts} />
         </Container>
       </Layout>

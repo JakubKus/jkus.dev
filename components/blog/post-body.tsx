@@ -1,7 +1,7 @@
 import markdownStyles from './markdown-styles.module.css';
-import AvatarWithBio from './avatar-with-bio';
+import AvatarWithBio from '../avatar-with-bio';
 import type { PostLinkType } from '../../interfaces/post-link';
-import Link from 'next/link';
+import PostLink from './post-link';
 
 type Props = {
   content: string;

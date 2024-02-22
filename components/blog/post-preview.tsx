@@ -12,7 +12,7 @@ const PostPreview = ({ title, date, excerpt, slug }: Props) => {
   return (
     <div>
       <h3 className="text-2xl mb-1 leading-snug font-extrabold">
-        <Link as={`/${slug}`} href="/[slug]">
+        <Link as={`/blog/${slug}`} href="/blog/[slug]">
           {title}
         </Link>
       </h3>

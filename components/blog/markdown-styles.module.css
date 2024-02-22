@@ -9,8 +9,10 @@
   @apply my-6;
 }
 
-.markdown ul {
-  @apply ps-6;
+.markdown ul,
+.markdown ol {
+  /* using padding-inline allows to have nested lists */
+  @apply ps-6 list-outside;
 }
 
 .markdown li {

@@ -1,18 +1,14 @@
 import Meta from './meta';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 import Footer from './footer';
 import Navbar from './navigation/navbar';
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Meta />
       <Navbar />
-      <div className="min-h-screen mt-8">
+      <div className="mt-navbar wideDesktop:mt-desktopNavbar py-8 min-h-content wideDesktop:min-h-desktopContent">
         <main>{children}</main>
       </div>
       <Footer />

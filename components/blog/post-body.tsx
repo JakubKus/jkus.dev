@@ -11,37 +11,15 @@ type Props = {
 
 const PostBody = ({ content, prevPost, nextPost }: Props) => {
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-content mx-auto">
       <div className={markdownStyles['markdown']} dangerouslySetInnerHTML={{ __html: content }} />
       <hr className="border-accent-1-light mb-6" />
-      <div className="block mb-6">
-        <AvatarWithBio />
-      </div>
-      <ul className="flex justify-between gap-x-3">
+      <AvatarWithBio />
+      <ul className="flex justify-between gap-x-3 mt-12">
         <PostLink post={prevPost} prefix="←" />
         <PostLink post={nextPost} suffix="→" alignRight />
       </ul>
     </div>
-  );
-};
-
-type PostLinkProps = {
-  post: PostLinkType;
-  prefix?: string;
-  suffix?: string;
-  alignRight?: boolean;
-};
-
-const PostLink = ({ post, prefix, suffix, alignRight }: PostLinkProps) => {
-  if (!post) return null;
-  const alignClass = alignRight ? 'ml-auto text-right' : '';
-
-  return (
-    <Link href="/[slug]" as={`/${post.slug}`} className={`flex items-center gap-x-2 ${alignClass}`}>
-      {prefix && <span>{prefix}</span>}
-      <span>{post.title}</span>
-      {suffix && <span>{suffix}</span>}
-    </Link>
   );
 };
 

@@ -1,6 +1,8 @@
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
+import { PostLinkType } from '@/interfaces/post-link';
+import PostType from '@/interfaces/post';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
@@ -14,30 +16,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
-  type Items = {
-    [key: string]: string;
-  };
-
-  const items: Items = {};
-
-  // Ensure only the minimal needed data is exposed
-  fields.forEach(field => {
-    if (field === 'slug') {
-      items[field] = realSlug;
-    }
-    if (field === 'content') {
-      items[field] = content;
-    }
-
-    if (typeof data[field] !== 'undefined') {
-      items[field] = data[field];
-    }
-  });
-
-  return items;
+  return { ...data, slug: realSlug, content } as PostType;
 }
 
-export function getAdjacentPosts(targetSlug: string, compareBy: string, fields: string[] = []) {
+export function getAdjacentPosts(targetSlug: string, compareBy: keyof PostType, fields: Array<keyof PostType> = []) {
   const slugs = getPostSlugs();
   const sortedPosts = slugs
     .map(slug => getPostBySlug(slug, fields.concat(compareBy)))
@@ -46,8 +28,13 @@ export function getAdjacentPosts(targetSlug: string, compareBy: string, fields: 
 
   const targetIdx = sortedPosts.findIndex(post => post.slug === targetSlug);
 
-  const prevPost = targetIdx > 0 ? sortedPosts[targetIdx - 1] : null;
-  const nextPost = targetIdx < sortedPosts.length - 1 ? sortedPosts[targetIdx + 1] : null;
+  const prevPost: PostLinkType = targetIdx > 0
+    ? { slug: sortedPosts[targetIdx - 1].slug, title: sortedPosts[targetIdx - 1].title }
+    : null;
+
+  const nextPost: PostLinkType = targetIdx < sortedPosts.length - 1
+    ? { slug: sortedPosts[targetIdx + 1].slug, title: sortedPosts[targetIdx + 1].title }
+    : null;
 
   return { prevPost, nextPost };
 }

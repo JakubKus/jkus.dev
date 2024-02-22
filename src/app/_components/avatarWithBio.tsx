@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BIO_LINES } from '../lib/constants';
+import { BIO_LINES } from '../../lib/constants';
 
 const author = {
   picture: '/assets/blog/author/jakub.jpg',

@@ -1,8 +1,12 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -20,7 +24,7 @@ module.exports = {
         tighter: '-.04em',
       },
       lineHeight: {
-        tight: 1.2,
+        tight: '1.2',
       },
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
@@ -39,3 +43,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default config;

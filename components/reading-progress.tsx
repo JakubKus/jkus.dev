@@ -1,17 +1,17 @@
 import React from 'react';
 
 type Props = {
-  contentRef: React.RefObject<HTMLDivElement>;
+  containerRef: React.RefObject<HTMLDivElement>;
 };
 
-const ReadingProgress = ({ contentRef }: Props) => {
+const ReadingProgress = ({ containerRef }: Props) => {
   const [readingProgress, setReadingProgress] = React.useState(0);
 
   React.useEffect(() => {
     const scrollListener = () => {
-      if (!contentRef.current) return;
+      if (!containerRef.current) return;
 
-      const element = contentRef.current;
+      const element = containerRef.current;
       const contentHeight = element.scrollHeight + element.offsetTop - window.innerHeight;
       const windowScrollPosition = window.scrollY;
 
@@ -26,7 +26,7 @@ const ReadingProgress = ({ contentRef }: Props) => {
     return () => {
       document.removeEventListener('scroll', scrollListener);
     };
-  }, [contentRef]);
+  }, [containerRef]);
 
   return (
     <span

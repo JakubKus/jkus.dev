@@ -5,13 +5,13 @@ excerpt: "Hello. A few days ago I had a thought I want to write something
 on my blog. I wasn't sure what should I write about."
 ---
 
-Hello. A few days ago I had a thought I want to write something on my blog. I 
-wasn't sure what should I write about. Then I came up with an idea to describe 
+Hello. A few days ago I had a thought I want to write something on my blog. I
+wasn't sure what should I write about. Then I came up with an idea to describe
 all design patterns which can be found on
-[Refactoring.guru](https://refactoring.guru/design-patterns). I decided to 
-prepare simple real-life examples to make them easier to remember and 
+[Refactoring.guru](https://refactoring.guru/design-patterns). I decided to
+prepare simple real-life examples to make them easier to remember and
 understand. As a front-end dev I'm gonna write those examples in typescript.\
-I'm really glad there are examples in ts on the website which I've mentioned 
+I'm really glad there are examples in ts on the website which I've mentioned
 above. I'm not gonna lie, my examples are going to be based on them :)
 
 I will start with Abstract factory as blogpost title says.
@@ -23,7 +23,7 @@ interface CoffeeDeviceFactory {
 ```
 
 Firstly I created one main factory interface for the topic thing - coffee
-device factory. It contains a method which will be used to create a coffee 
+device factory. It contains a method which will be used to create a coffee
 brewing machine.
 
 ```ts
@@ -53,7 +53,7 @@ class HomeCoffeeMachine implements AbstractCoffeeMachine {
 }
 ```
 
-Here I created 2 classes implementing interfaces explained above for brewing at 
+Here I created 2 classes implementing interfaces explained above for brewing at
 home.
 
 ```ts
@@ -108,9 +108,9 @@ brewCoffees(new CafeCoffeeFactory());
 */
 ```
 
-Finally I create `brewCoffees` function and call it to test the abstract 
+Finally I create `brewCoffees` function and call it to test the abstract
 factory.
 
-And that's it! You can find raw code of all patterns on my github in 
+And that's it! You can find raw code of all patterns on my github in
 [this repo](https://github.com/jakubkus/patterns). \
 Thanks for reading :)

@@ -18,6 +18,7 @@ convention of "states" and how to prepare first empty project I learned from
 Official [Documentation](https://reactjs.org/docs/getting-started.html) also
 helped me, but not that much as those great videos. Here are some rules of
 using React I noticed so far:
+
 - Every class should have constructor which looks like this:
 
 ```jsx
@@ -38,7 +39,7 @@ class Button extends React.Component {
 - The only way to change value of state is to use "setState":
 
 ```jsx
-this.setState({property: "new value"})
+this.setState({ property: 'new value' });
 ```
 
 - Every class should have render() method and return block inside:
@@ -57,7 +58,7 @@ render() {
   class' render() method:
 
 ```jsx
-<Button/>
+<Button />
 ```
 
 Ok, rules are listed, now let's move to my app. It's gonna be an interactive

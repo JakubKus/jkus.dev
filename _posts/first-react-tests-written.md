@@ -20,6 +20,7 @@ What can I say about testing React app is that it's very similar to testing
 pure JavaScript things. I've had experience with that before so I knew a bit
 how testing works. Previously I used [Jasmine](https://jasmine.github.io/) (no,
 I didn't use any girl to tests, this just testing framework's name ;D ).
+
 - To start testing I added few devDependencies to package.json file in my
   project and installed it with npm:
 
@@ -43,7 +44,7 @@ I didn't use any girl to tests, this just testing framework's name ;D ).
 
 ```jsx
 describe('0 buttons clicked', () => {
-  it('answer button doesn\'t have class `checked`', () => {
+  it("answer button doesn't have class `checked`", () => {
     expect(body.find('button').at(1).hasClass('checked')).toBeFalsy();
   });
 });

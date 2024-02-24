@@ -1,8 +1,8 @@
 ---
-title: "How to reuse scss parent selector in nested ones"
-date: "2020-09-07"
+title: 'How to reuse scss parent selector in nested ones'
+date: '2020-09-07'
 excerpt: "Today I'll show you my new approach for writing selectors using
- parent selectors with BEM modifiers."
+  parent selectors with BEM modifiers."
 ---
 
 Today I'll show you my new approach for writing selectors using parent
@@ -44,7 +44,7 @@ into it. It would look like this:
       }
     }
   }
-  
+
   &__paragraph {
     color: black;
   }
@@ -63,11 +63,11 @@ parent selector. Here is a solution I found out:
   &--dark {
     background-color: dimgrey;
   }
-  
+
   &__paragraph {
     color: black;
   }
-  
+
   &--dark & {
     &__paragraph {
       color: white;
@@ -88,7 +88,7 @@ require an update.
 The only bad thing of above solution is that We have to prepare a separate
 selector for a dark mode. We cannot do something like this:
 
- ```scss{1-2}
+```scss{1-2}
 &--dark & {
   background-color: dimgrey;
 
@@ -102,4 +102,4 @@ It would produce `.component--dark .component` and this is not what We want.
 Except that one disadvantage, We get a benefit in code readability which is
 quite an important thing in my opinion.
 
-Thanks for reading :) 
+Thanks for reading :)

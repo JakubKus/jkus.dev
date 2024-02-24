@@ -1,18 +1,18 @@
 ---
 title: Solidity basics for programmers
-date: "2022-08-11"
-excerpt: "Hello after long break! 😅 Today I want to present you everything I learned about Solidity"
+date: '2022-08-11'
+excerpt: 'Hello after long break! 😅 Today I want to present you everything I learned about Solidity'
 ---
 
 Hello after long break! 😅 Today I want to present you everything I learned about Solidity from "web2" developer
 perspective. My knowledge is based pretty much on [CryptoZombies](https://cryptozombies.io) online course/game. In this
-post I use many js analogies and in a few  places I also use c++ ones. You have been warned.
+post I use many js analogies and in a few places I also use c++ ones. You have been warned.
 
 - Solidity version in contract:
 
 ```solidity
 pragma solidity >=0.5.0 <0.6.0;
-// declare version range 
+// declare version range
 pragma solidity ^0.8.4;
 // or without specifying upper bound
 ```
@@ -32,8 +32,8 @@ Person person = Person(25, 'Jakub');
 ```js
 // in js:
 function Person(age, name) {
-  this.age = age
-  this.name = name
+  this.age = age;
+  this.name = name;
 }
 const person = new Person(25, 'Jakub');
 ```
@@ -127,8 +127,8 @@ const ownerNFTCount: { [address: number]: number } = {};
 const addressToBalance: { [address: number]: number } = {};
 
 const storeValues = () => {
-  ownerNFTCount[0x0cE446255506E92DF41614C46F1d6df9Cc969183] = 2;
-  addressToBalance[0x0cE446255506E92DF41614C46F1d6df9Cc969183] = 10;
+  ownerNFTCount[0x0ce446255506e92df41614c46f1d6df9cc969183] = 2;
+  addressToBalance[0x0ce446255506e92df41614c46f1d6df9cc969183] = 10;
 };
 
 const retrieveValues = (address: number) => ({
@@ -148,8 +148,8 @@ function fn(uint a) private {
 ```js
 // equivalent in js:
 function fn(a) {
-  if (a !== 0 ) return 'value should be 0';
-  // notice != in js and == in solidity 
+  if (a !== 0) return 'value should be 0';
+  // notice != in js and == in solidity
 }
 ```
 
@@ -270,6 +270,7 @@ owner.transfer(address(this).balance);
   SafeMath is a lib which helps with preventing number overflows
 - `require()` function will refund gas if condition don’t pass, `assert()` will **not**
 - In frontend side communication with smart contracts:
+
   - `call` - is used for view and pure functions
   - `send` - will create a transaction and change data on the blockchain
 
@@ -285,4 +286,4 @@ cryptoZombies.events.Transfer({ filter: { _to: userAccount } })
 
 - Using events can be used in some cases as a cheaper form of storage.
 
-And that's it! Thanks for reading :) 
+And that's it! Thanks for reading :)

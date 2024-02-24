@@ -39,7 +39,7 @@ and in \<SingleButton>
 ```jsx
 <button name="answer"
         onClick={this.props.checkAnswer}
-        className={this.props.isChecked ? "checked" : ""}
+        className={this.props.isChecked ? 'checked' : ''}
 >
   {this.props.answer}
 </button>
@@ -47,11 +47,10 @@ and in \<SingleButton>
 
 I learned also that calling function right after setState method executes it
 actually when state is updated. It is very comfortable and useful. I found it
-[here](
-http://reactkungfu.com/2016/03/dive-into-react-codebase-handling-state-changes/)
+[here](http://reactkungfu.com/2016/03/dive-into-react-codebase-handling-state-changes/)
 
 ```jsx
-this.setState({form: updatedForm}, this.showMeals)
+this.setState({ form: updatedForm }, this.showMeals);
 ```
 
 Another pretty important thing is updating data in render() method. It is
@@ -59,7 +58,12 @@ helpful if you want to do something more than show state values on the screen:
 
 ```jsx
 let meals = this.state.meals.map((element, index) => {
-  return <p key={index} className={element.isActive ? "" : "inactive"}>{element.name}</p>});
+  return (
+    <p key={index} className={element.isActive ? '' : 'inactive'}>
+      {element.name}
+    </p>
+  );
+});
 ```
 
 As you can see I used map function here. I've heard about that before but I

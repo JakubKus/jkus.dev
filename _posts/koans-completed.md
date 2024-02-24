@@ -18,10 +18,10 @@ application. Here is what new I learned from it.
 ```jsx
 groceries: [
   {
-    name: "Apples",
-    completed: false
-  }
-]
+    name: 'Apples',
+    completed: false,
+  },
+];
 ```
 
 - I found out that you can "rerender" things in render() method before return
@@ -36,7 +36,7 @@ render() {
       <GroceryListItem
         grocery={this.state.groceries[index]}
       />
-    );  
+    );
   }
   return (
     <div>

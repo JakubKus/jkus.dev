@@ -11,9 +11,9 @@ In IT world it's often said that adding new features to projects is the most
 exciting activity in whole development process. So here comes new feature to my
 app! Now, when you get chosen meal and you click on it, you will get link or
 links to a sites with recipe and instructions. This is how I did it:
+
 - I used Google Custom Search REST api to get links based on search meal names.
-  [This document](
-  https://developers.google.com/custom-search/json-api/v1/using_rest) shows very
+  [This document](https://developers.google.com/custom-search/json-api/v1/using_rest) shows very
   clearly how to build request and how to get results
 - I found also Fetch API for JavaScript which is great! I followed
   [this](https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2)
@@ -21,7 +21,7 @@ links to a sites with recipe and instructions. This is how I did it:
   Google API my request looks like this:
 
 ```jsx
-fetch('https://www.googleapis.com/customsearch/v1?key=API_KEY&q=' + this.state.randomMeal + ' recipe')
+fetch('https://www.googleapis.com/customsearch/v1?key=API_KEY&q=' + this.state.randomMeal + ' recipe');
 ```
 
 - It wasn't of course everything I had to do. I added few more states to be
@@ -37,9 +37,9 @@ let simplyrecipesFound = this.state.simplyrecipes ? "" :"hidden";
 let tasteofhomeFound = this.state.tasteofhome ? "" : "hidden";
 
 let hideRandomMeal = !(allrecipesFound && simplyrecipesFound && tasteofhomeFound) ? "hidden" : "";
-<button className={hideRandomMeal} disabled={this.state.disableRandomMeal} id="randomMeal" onClick={this.showLinks}>{this.state.randomMeal}</button>  
-<a className={allrecipesFound} href={this.state.allrecipes.toString()}>AllRecipes.com</a>  
-<a className={simplyrecipesFound} href={this.state.simplyrecipes.toString()}>SimplyRecipes.com</a>  
+<button className={hideRandomMeal} disabled={this.state.disableRandomMeal} id="randomMeal" onClick={this.showLinks}>{this.state.randomMeal}</button>
+<a className={allrecipesFound} href={this.state.allrecipes.toString()}>AllRecipes.com</a>
+<a className={simplyrecipesFound} href={this.state.simplyrecipes.toString()}>SimplyRecipes.com</a>
 <a className={tasteofhomeFound} href={this.state.tasteofhome.toString()}>TasteOfHome.com</a>
 ```
 

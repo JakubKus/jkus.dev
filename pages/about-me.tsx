@@ -43,6 +43,8 @@ export default function AboutMe() {
             <b>#5 Restorative</b> - Good at seeking of root of the problem and solving it
           </li>
         </ul>
+        <br />
+        <p>If you want to contact with me, use jakub🐒jkus.dev</p>
       </Container>
     </Layout>
   );

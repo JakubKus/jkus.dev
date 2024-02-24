@@ -8,7 +8,7 @@ const Layout = ({ children }: PropsWithChildren) => {
   const contentRef = React.createRef<HTMLDivElement>();
 
   return (
-    <div ref={contentRef}>
+    <div ref={contentRef} className="flow-root h-full">
       <Meta />
       <Navbar />
       <ReadingProgress contentRef={contentRef} />

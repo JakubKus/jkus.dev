@@ -39,7 +39,7 @@
   }
 
   #__next {
-    @apply h-full flow-root;
+    @apply h-full;
   }
 }
 

@@ -12,7 +12,7 @@ const ReadingProgress = ({ contentRef }: Props) => {
       if (!contentRef.current) return;
 
       const element = contentRef.current;
-      const contentHeight = element.clientHeight + element.offsetTop - window.innerHeight;
+      const contentHeight = element.scrollHeight + element.offsetTop - window.innerHeight;
       const windowScrollPosition = window.scrollY;
 
       if (windowScrollPosition === 0) return setReadingProgress(0);

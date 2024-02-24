@@ -2,6 +2,7 @@ import React from 'react';
 import AvatarWithBio from '../avatar-with-bio';
 import Menu from './menu';
 import BurgerButton from './burger-button';
+import SocialLinks from '../social-links';
 
 const Navbar = () => {
   const [menuActive, setMenuActive] = React.useState(false);
@@ -14,6 +15,7 @@ const Navbar = () => {
           <AvatarWithBio />
           <Menu active={menuActive} />
           <BurgerButton active={menuActive} onClick={toggleMenu} />
+          <SocialLinks />
         </div>
       </header>
     </>

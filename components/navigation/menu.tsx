@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import SocialLinks from '../social-links';
 
 type Props = {
   active: boolean;
@@ -25,6 +26,9 @@ function Menu({ active }: Props) {
           {link.label}
         </Link>
       ))}
+      <div className="py-4 desktop:hidden flex items-center">
+        <SocialLinks mobile />
+      </div>
     </nav>
   );
 }

@@ -5,7 +5,8 @@ type Props = {
   active: boolean;
 };
 
-const afterClass = 'after:bg-accent-2 after:bottom-0 after:h-[1px] after:left-0 after:absolute after:scale-x-0 after:origin-right after:transition-transform after:duration-[250ms] after:w-full';
+const afterClass =
+  'after:bg-accent-2 after:bottom-0 after:h-[1px] after:left-0 after:absolute after:scale-x-0 after:origin-right after:transition-transform after:duration-[250ms] after:w-full';
 const hoverClass = 'hover:after:scale-x-100 hover:after:origin-left';
 
 function Menu({ active }: Props) {

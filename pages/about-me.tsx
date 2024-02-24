@@ -18,8 +18,8 @@ export default function AboutMe() {
           projects was always a thing that kept me motivated in programming. I&apos;m also interested in web3 a bit.
         </p>
         <p>
-          In my spare time I help frontend students in project called <a href="https://zerotojunior.dev">Zero To Junior
-        </a> as a mentor.
+          In my spare time I help frontend students in project called{' '}
+          <a href="https://zerotojunior.dev">Zero To Junior</a> as a mentor.
         </p>
         <p>I also read some self-development books.</p>
         <br />
@@ -33,9 +33,15 @@ export default function AboutMe() {
             <b>#2 Focus</b> - I can take direction, then make plan and prioritize all things that need to be done to get
             there
           </li>
-          <li><b>#3 Analytical</b> - I like to understand the situation in 100%, what and why caused it</li>
-          <li><b>#4 Harmony</b> - I always try to look for consensus and don&apos;t waste time on arguing</li>
-          <li><b>#5 Restorative</b> - Good at seeking of root of the problem and solving it</li>
+          <li>
+            <b>#3 Analytical</b> - I like to understand the situation in 100%, what and why caused it
+          </li>
+          <li>
+            <b>#4 Harmony</b> - I always try to look for consensus and don&apos;t waste time on arguing
+          </li>
+          <li>
+            <b>#5 Restorative</b> - Good at seeking of root of the problem and solving it
+          </li>
         </ul>
       </Container>
     </Layout>

@@ -10,9 +10,7 @@ export default function Index() {
         <Head>
           <title>{HEADLINE}</title>
         </Head>
-        <Container>
-          siema
-        </Container>
+        <Container>siema</Container>
       </Layout>
     </>
   );

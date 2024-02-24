@@ -25,7 +25,7 @@ const ReadingProgress = ({ contentRef }: Props) => {
 
     return () => {
       document.removeEventListener('scroll', scrollListener);
-    }
+    };
   }, [contentRef]);
 
   return (
@@ -34,6 +34,6 @@ const ReadingProgress = ({ contentRef }: Props) => {
       style={{ transform: `scaleX(${readingProgress})` }}
     />
   );
-}
+};
 
 export default ReadingProgress;

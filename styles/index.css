@@ -28,11 +28,13 @@
     @apply text-1.5xl font-bold leading-loose;
   }
 
-  p, li {
+  p,
+  li {
     @apply text-base leading-relaxed;
   }
 
-  ul, ol {
+  ul,
+  ol {
     @apply list-disc list-inside;
   }
 

@@ -8,7 +8,7 @@ module.exports = {
       boxShadow: {
         sm: '0 5px 10px rgba(0, 0, 0, 0.12)',
         md: '0 8px 30px rgba(0, 0, 0, 0.12)',
-        navbar: '0 0 5px rgb(0 0 0)'
+        navbar: '0 0 5px rgb(0 0 0)',
       },
       colors: {
         'accent-1': 'rgb(255 255 255 / 90%)',
@@ -49,10 +49,10 @@ module.exports = {
       },
       screens: {
         desktop: {
-          min: defaultTheme.screens.xl
+          min: defaultTheme.screens.xl,
         },
         wideDesktop: {
-          min: defaultTheme.screens['2xl']
+          min: defaultTheme.screens['2xl'],
         },
       },
       spacing: {

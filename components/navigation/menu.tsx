@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import SocialLinks from '../social-links';
+import { routes } from '../routes';
 
 type Props = {
   active: boolean;
@@ -17,7 +18,7 @@ function Menu({ active }: Props) {
     <nav
       className={`${activeClass} absolute desktop:relative bg-accent-3 w-full flex-col desktop:flex-row top-navbar desktop:top-0 left-0 text-center border-t-2 border-b-2 border-black desktop:border-none desktop:gap-x-4`}
     >
-      {links.map(link => (
+      {routes.map(link => (
         <Link
           className={`${afterClass} ${hoverClass} relative text-sm desktop:text-base text-accent-1 py-4 desktop:pt-0 desktop:pb-1.5 border-b border-black last:border-0 desktop:border-0 tracking-[0.2em]`}
           key={link.href}
@@ -32,13 +33,5 @@ function Menu({ active }: Props) {
     </nav>
   );
 }
-
-const links = [
-  { href: '/blog', label: 'BLOG' },
-  { href: '/projects', label: 'PROJECTS' },
-  { href: '/about-me', label: 'ABOUT ME' },
-  { href: '/books', label: 'BOOKS' },
-  { href: '/tools', label: 'TOOLS' },
-];
 
 export default Menu;

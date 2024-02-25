@@ -1,7 +1,7 @@
 export const routes = [
-  { href: '/', label: 'ABOUT ME' },
-  { href: '/blog', label: 'BLOG' },
-  { href: '/projects', label: 'PROJECTS' },
-  { href: '/books', label: 'BOOKS' },
-  { href: '/tools', label: 'TOOLS' },
+  { link: '/', label: 'ABOUT ME' },
+  { link: '/blog', label: 'BLOG' },
+  { link: '/projects', label: 'PROJECTS' },
+  { link: '/books', label: 'BOOKS' },
+  { link: '/tools', label: 'TOOLS' },
 ];

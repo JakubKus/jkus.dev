@@ -16,6 +16,7 @@ const SocialLinks = ({ mobile }: Props) => {
           width={24}
           height={24}
           alt="visit Jakub's LinkedIn profile"
+          className="w-6 h-6 object-contain"
         />
       </a>
       <a href="https://github.com/JakubKus" rel="noopener noreferrer">
@@ -40,6 +41,7 @@ const SocialLinks = ({ mobile }: Props) => {
           width={24}
           height={24}
           alt="visit Jakub's YouTube channel"
+          className="w-6 h-6 object-contain"
         />
       </a>
     </div>

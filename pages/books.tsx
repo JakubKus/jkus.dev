@@ -34,7 +34,7 @@ export default function Books() {
         </ul>
         <h2>Read:</h2>
         <ul>
-          <li>&quot;4-Hour Workweek&quot; - Timothy Ferris</li>
+          <li>&quot;4-Hour Workweek&quot; - Timothy Ferris: 9/10</li>
           <li>&quot;Async Remote&quot; - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
           <li>&quot;Node.js Design Patterns&quot; - Mario Casciaro, Luciano Mammino: 10/10</li>
           <li>&quot;Elon Musk&quot; - Ashlee Vance: 9/10</li>

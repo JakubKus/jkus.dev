@@ -21,10 +21,9 @@ export default function Tools() {
           <li>Notion</li>
           <li>aText</li>
           <li>PowerToys</li>
-          <li>Bitwarden</li>
           <li>Dark Reader</li>
           <li>Tampermonkey</li>
-          <li>(I want to add Make and Airtable to this list in the future)</li>
+          <li>Make</li>
         </ul>
       </Container>
     </Layout>

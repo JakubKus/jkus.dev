@@ -17,11 +17,11 @@ export default function Index() {
         </p>
         <ul>
           <li>
-            Being a <b>frontend mentor</b> in{' '}
+            Mentoring students in {' '}
             <a href="https://zerotojunior.dev" rel="noopener noreferrer">
               Zero To Junior
             </a>{' '}
-            where I help frontend students get their first job as a junior developer
+            to help them get their first job as a junior <b>frontend developers</b>
           </li>
           <li>
             Listening{' '}
@@ -40,10 +40,10 @@ export default function Index() {
         <br />
         <p>
           I started my career as a <b>frontend developer</b>, but after 3 years I decided to switch my path to a{' '}
-          <b>fullstack developer</b>. I&apos;m aware it would be easier to just specialize in a single thing and become
-          solid expert in it, but it&apos;s just not the way for me. I like to build things and I try to not limit
-          myself by being specialized in only one thing. <b>Fullstack approach</b> allows me to do everything I want and
-          gives me more fun.
+          <b>fullstack developer</b>. I&apos;m fully aware it would be easier to specialize in a single area and become
+          an expert in it, but it&apos;s just not the way for me. I like to build things and I try to not limit myself
+          by being a specialist in narrow field. <b>Fullstack approach</b> allows me to do everything I want and gives
+          me more fun.
         </p>
         <br />
         <p>

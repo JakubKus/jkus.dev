@@ -13,7 +13,7 @@
   }
 
   a {
-    @apply text-accent-2 hover:no-underline;
+    @apply text-accent-2 hover:no-underline text-left;
   }
 
   @font-face {

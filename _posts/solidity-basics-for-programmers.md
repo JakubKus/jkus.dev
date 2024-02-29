@@ -77,7 +77,8 @@ function takeTwo(uint[] calldata values) external pure returns (uint[2] memory) 
 ```
 
 - `string[5] stringArray;` - it is possible to declare the array size like in other languages
-- `msg.sender` - address of contract caller, e.g. 0x0cE446255506E92DF41614C46F1d6df9Cc969183
+- `msg.sender` - address of contract caller, e.g.\
+0x0cE446255506E92DF41614C46F1d6df9Cc969183
 - Semi-random number generator in solidity:
 
 ```solidity

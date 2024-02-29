@@ -21,11 +21,11 @@ function Menu({ open }: Props) {
 
   return (
     <nav
-      className={`${openedClass} absolute desktop:relative bg-accent-3 w-full flex-col desktop:flex-row top-navbar desktop:top-0 left-0 text-center border-t-2 border-b-2 border-black desktop:border-none desktop:gap-x-4`}
+      className={`${openedClass} absolute desktop:relative bg-accent-3 w-full flex-col desktop:flex-row top-navbar desktop:top-0 left-0 border-t-2 border-b-2 border-black desktop:border-none desktop:gap-x-4`}
     >
       {routes.map(route => (
         <Link
-          className={`${afterClass} ${hoverClass} ${activeRouteClass(route.link)} relative text-sm desktop:text-base text-accent-1 py-4 desktop:pt-0 desktop:pb-1.5 border-b border-black last:border-0 desktop:border-0 tracking-[0.2em]`}
+          className={`${afterClass} ${hoverClass} ${activeRouteClass(route.link)} relative text-center text-sm desktop:text-base text-accent-1 py-4 desktop:pt-0 desktop:pb-1.5 border-b border-black last:border-0 desktop:border-0 tracking-[0.2em]`}
           key={route.link}
           href={route.link}
         >

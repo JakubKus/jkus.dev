@@ -13,12 +13,11 @@ export default function Books() {
         </Head>
         <h1>Books:</h1>
         <h2>In progress:</h2>
+          <li>&quot;How To Get Rich&quot; - Felix Dennis</li>
         <ul>
-          <li>&quot;Atlas Shrugged&quot; - Ayn Rand</li>
         </ul>
         <h2>To read:</h2>
         <ul>
-          <li>&quot;How To Get Rich&quot; - Felix Dennis</li>
           <li>&quot;Will It Fly?&quot; - Pat Flynn</li>
           <li>&quot;Digital Minimalism&quot; - Cal Newport</li>
           <li>&quot;Deep Work&quot; - Cal Newport</li>
@@ -34,6 +33,8 @@ export default function Books() {
         </ul>
         <h2>Read:</h2>
         <ul>
+          <li>&quot;Clean Architecture&quot; - Robert C. Martin: 9/10</li>
+          <li>&quot;Atlas Shrugged&quot; - Ayn Rand: 9/10</li>
           <li>&quot;4-Hour Workweek&quot; - Timothy Ferris: 9/10</li>
           <li>&quot;Async Remote&quot; - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
           <li>&quot;Node.js Design Patterns&quot; - Mario Casciaro, Luciano Mammino: 10/10</li>

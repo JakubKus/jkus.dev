@@ -14,34 +14,34 @@ export default function Books() {
         <h1>Books:</h1>
         <h2>In progress:</h2>
         <ul>
-          <li>&quot;Deep Work&quot; - Cal Newport</li>
+          <li><i>“Deep Work”</i> - Cal Newport</li>
         </ul>
         <h2>To read:</h2>
         <ul>
-          <li>&quot;Will It Fly?&quot; - Pat Flynn</li>
-          <li>&quot;Digital Minimalism&quot; - Cal Newport</li>
-          <li>&quot;The One Thing&quot; - Gary W. Keller, Jay Papasan</li>
-          <li>&quot;The Dip&quot; - Seth Godin</li>
-          <li>&quot;Secrets of Power Negotiating&quot; - Roger Dawson</li>
-          <li>&quot;Extreme Ownership&quot; - Jocko Willink, Leif Babin</li>
-          <li>&quot;Domain Storytelling&quot; - Stefan Hofer, Henning Schwentner</li>
-          <li>&quot;Domain-Driven Design&quot; - Eric Evans</li>
-          <li>&quot;Steve Jobs&quot; - Walter Isaacson</li>
-          <li>&quot;Total Recall&quot; - Arnold Schwarzenegger</li>
-          <li>&quot;E-Myth Revisited&quot; - Gerber Michael E.</li>
+          <li><i>“Will It Fly?”</i> - Pat Flynn</li>
+          <li><i>“Digital Minimalism”</i> - Cal Newport</li>
+          <li><i>“The One Thing”</i> - Gary W. Keller, Jay Papasan</li>
+          <li><i>“The Dip”</i> - Seth Godin</li>
+          <li><i>“Secrets of Power Negotiating”</i> - Roger Dawson</li>
+          <li><i>“Extreme Ownership”</i> - Jocko Willink, Leif Babin</li>
+          <li><i>“Domain Storytelling”</i> - Stefan Hofer, Henning Schwentner</li>
+          <li><i>“Domain-Driven Design”</i> - Eric Evans</li>
+          <li><i>“Steve Jobs”</i> - Walter Isaacson</li>
+          <li><i>“Total Recall”</i> - Arnold Schwarzenegger</li>
+          <li><i>“E-Myth Revisited”</i> - Gerber Michael E.</li>
         </ul>
         <h2>Read:</h2>
         <ul>
-          <li>&quot;How To Get Rich&quot; - Felix Dennis: 9/10</li>
-          <li>&quot;Clean Architecture&quot; - Robert C. Martin: 9/10</li>
-          <li>&quot;Atlas Shrugged&quot; - Ayn Rand: 9/10</li>
-          <li>&quot;4-Hour Workweek&quot; - Timothy Ferris: 9/10</li>
-          <li>&quot;Async Remote&quot; - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
-          <li>&quot;Node.js Design Patterns&quot; - Mario Casciaro, Luciano Mammino: 10/10</li>
-          <li>&quot;Elon Musk&quot; - Ashlee Vance: 9/10</li>
-          <li>&quot;Getting Past No&quot; - William Ury: 9/10</li>
-          <li>&quot;How to Stop Worrying and Start Living&quot; - Dale Carnegie: 7/10</li>
-          <li>&quot;Zawód: Programista&quot; - Maciej Aniserowicz: 9/10</li>
+          <li><i>“How To Get Rich”</i> - Felix Dennis: 9/10</li>
+          <li><i>“Clean Architecture”</i> - Robert C. Martin: 9/10</li>
+          <li><i>“Atlas Shrugged”</i> - Ayn Rand: 9/10</li>
+          <li><i>“4-Hour Workweek”</i> - Timothy Ferris: 9/10</li>
+          <li><i>“Async Remote”</i> - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
+          <li><i>“Node.js Design Patterns”</i> - Mario Casciaro, Luciano Mammino: 10/10</li>
+          <li><i>“Elon Musk”</i> - Ashlee Vance: 9/10</li>
+          <li><i>“Getting Past No”</i> - William Ury: 9/10</li>
+          <li><i>“How to Stop Worrying and Start Living”</i> - Dale Carnegie: 7/10</li>
+          <li><i>“Zawód: Programista”</i> - Maciej Aniserowicz: 9/10</li>
         </ul>
       </Container>
     </Layout>

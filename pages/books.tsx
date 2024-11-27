@@ -21,6 +21,7 @@ export default function Books() {
           <li><i>“The One Thing”</i> - Gary W. Keller, Jay Papasan</li>
           <li><i>“The 48 Laws of Power”</i> - Robert Greene</li>
           <li><i>“Will It Fly?”</i> - Pat Flynn</li>
+          <li><i>“Nonviolent Communication”</i> - Marshall B. Rosenberg</li>
           <li><i>“Extreme Ownership”</i> - Jocko Willink,  Leif Babin</li>
           <li><i>“Digital Minimalism”</i> - Cal Newport</li>
           <li><i>“The Dip”</i> - Seth Godin</li>

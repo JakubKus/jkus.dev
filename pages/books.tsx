@@ -14,16 +14,17 @@ export default function Books() {
         <h1>Books:</h1>
         <h2>In progress:</h2>
         <ul>
-          <li><i>“Deep Work”</i> - Cal Newport</li>
+          <li><i>“The compassionate mind approach to building self-confidence”</i> - Mary Welford</li>
         </ul>
         <h2>To read:</h2>
         <ul>
-          <li><i>“Will It Fly?”</i> - Pat Flynn</li>
-          <li><i>“Digital Minimalism”</i> - Cal Newport</li>
           <li><i>“The One Thing”</i> - Gary W. Keller, Jay Papasan</li>
+          <li><i>“The 48 Laws of Power”</i> - Robert Greene</li>
+          <li><i>“Will It Fly?”</i> - Pat Flynn</li>
+          <li><i>“Extreme Ownership”</i> - Jocko Willink,  Leif Babin</li>
+          <li><i>“Digital Minimalism”</i> - Cal Newport</li>
           <li><i>“The Dip”</i> - Seth Godin</li>
           <li><i>“Secrets of Power Negotiating”</i> - Roger Dawson</li>
-          <li><i>“Extreme Ownership”</i> - Jocko Willink, Leif Babin</li>
           <li><i>“Domain Storytelling”</i> - Stefan Hofer, Henning Schwentner</li>
           <li><i>“Domain-Driven Design”</i> - Eric Evans</li>
           <li><i>“Steve Jobs”</i> - Walter Isaacson</li>
@@ -32,6 +33,7 @@ export default function Books() {
         </ul>
         <h2>Read:</h2>
         <ul>
+          <li><i>“Deep Work”</i> - Cal Newport: /10</li>
           <li><i>“How To Get Rich”</i> - Felix Dennis: 9/10</li>
           <li><i>“Clean Architecture”</i> - Robert C. Martin: 9/10</li>
           <li><i>“Atlas Shrugged”</i> - Ayn Rand: 9/10</li>

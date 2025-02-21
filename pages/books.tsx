@@ -14,37 +14,38 @@ export default function Books() {
         <h1>Books:</h1>
         <h2>In progress:</h2>
         <ul>
-          <li><i>“The compassionate mind approach to building self-confidence”</i> - Mary Welford</li>
+          <li><b><i>“Nexus”</i></b> - Yuval Noah Harari</li>
         </ul>
         <h2>To read:</h2>
         <ul>
-          <li><i>“The One Thing”</i> - Gary W. Keller, Jay Papasan</li>
-          <li><i>“The 48 Laws of Power”</i> - Robert Greene</li>
-          <li><i>“Will It Fly?”</i> - Pat Flynn</li>
-          <li><i>“Nonviolent Communication”</i> - Marshall B. Rosenberg</li>
-          <li><i>“Extreme Ownership”</i> - Jocko Willink,  Leif Babin</li>
-          <li><i>“Digital Minimalism”</i> - Cal Newport</li>
-          <li><i>“The Dip”</i> - Seth Godin</li>
-          <li><i>“Secrets of Power Negotiating”</i> - Roger Dawson</li>
-          <li><i>“Domain Storytelling”</i> - Stefan Hofer, Henning Schwentner</li>
-          <li><i>“Domain-Driven Design”</i> - Eric Evans</li>
-          <li><i>“Steve Jobs”</i> - Walter Isaacson</li>
-          <li><i>“Total Recall”</i> - Arnold Schwarzenegger</li>
-          <li><i>“E-Myth Revisited”</i> - Gerber Michael E.</li>
+          <li><b><i>“The One Thing”</i></b> - Gary W. Keller, Jay Papasan</li>
+          <li><b><i>“The 48 Laws of Power”</i></b> - Robert Greene</li>
+          <li><b><i>“Will It Fly?”</i></b> - Pat Flynn</li>
+          <li><b><i>“Nonviolent Communication”</i></b> - Marshall B. Rosenberg</li>
+          <li><b><i>“Extreme Ownership”</i></b> - Jocko Willink,  Leif Babin</li>
+          <li><b><i>“Digital Minimalism”</i></b> - Cal Newport</li>
+          <li><b><i>“The Dip”</i></b> - Seth Godin</li>
+          <li><b><i>“Secrets of Power Negotiating”</i></b> - Roger Dawson</li>
+          <li><b><i>“Domain Storytelling”</i></b> - Stefan Hofer, Henning Schwentner</li>
+          <li><b><i>“Domain-Driven Design”</i></b> - Eric Evans</li>
+          <li><b><i>“Steve Jobs”</i></b> - Walter Isaacson</li>
+          <li><b><i>“Total Recall”</i></b> - Arnold Schwarzenegger</li>
+          <li><b><i>“E-Myth Revisited”</i></b> - Gerber Michael E.</li>
         </ul>
-        <h2>Read:</h2>
+        <h2>Completed:</h2>
         <ul>
-          <li><i>“Deep Work”</i> - Cal Newport: /10</li>
-          <li><i>“How To Get Rich”</i> - Felix Dennis: 9/10</li>
-          <li><i>“Clean Architecture”</i> - Robert C. Martin: 9/10</li>
-          <li><i>“Atlas Shrugged”</i> - Ayn Rand: 9/10</li>
-          <li><i>“4-Hour Workweek”</i> - Timothy Ferris: 9/10</li>
-          <li><i>“Async Remote”</i> - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
-          <li><i>“Node.js Design Patterns”</i> - Mario Casciaro, Luciano Mammino: 10/10</li>
-          <li><i>“Elon Musk”</i> - Ashlee Vance: 9/10</li>
-          <li><i>“Getting Past No”</i> - William Ury: 9/10</li>
-          <li><i>“How to Stop Worrying and Start Living”</i> - Dale Carnegie: 7/10</li>
-          <li><i>“Zawód: Programista”</i> - Maciej Aniserowicz: 9/10</li>
+          <li><b><i>“The compassionate mind approach to building self-confidence”</i></b> - Mary Welford: 8/10</li>
+          <li><b><i>“Deep Work”</i></b> - Cal Newport: 9/10</li>
+          <li><b><i>“How To Get Rich”</i></b> - Felix Dennis: 9/10</li>
+          <li><b><i>“Clean Architecture”</i></b> - Robert C. Martin: 9/10</li>
+          <li><b><i>“Atlas Shrugged”</i></b> - Ayn Rand: 9/10</li>
+          <li><b><i>“4-Hour Workweek”</i></b> - Timothy Ferris: 9/10</li>
+          <li><b><i>“Async Remote”</i></b> - Robert Pankowecki, Andrzej Krzywda: 8/10</li>
+          <li><b><i>“Node.js Design Patterns”</i></b> - Mario Casciaro, Luciano Mammino: 10/10</li>
+          <li><b><i>“Elon Musk”</i></b> - Ashlee Vance: 9/10</li>
+          <li><b><i>“Getting Past No”</i></b> - William Ury: 9/10</li>
+          <li><b><i>“How to Stop Worrying and Start Living”</i></b> - Dale Carnegie: 7/10</li>
+          <li><b><i>“Zawód: Programista”</i></b> - Maciej Aniserowicz: 9/10</li>
         </ul>
       </Container>
     </Layout>

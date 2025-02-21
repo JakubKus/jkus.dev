@@ -17,9 +17,12 @@ export default function Tools() {
           <li>Github Copilot ❤️</li>
           <li>Webstorm</li>
           <li>Database Tools for Webstorm</li>
-          <li>WSL + Fish shell + Bob the fish theme</li>
-          <li>Notion</li>
+          <li>WSL2</li>
+          <li>WinSCP</li>
+          <li>Postman</li>
+          <li>DeepL</li>
           <li>aText</li>
+          <li>Notion</li>
           <li>PowerToys</li>
           <li>Dark Reader</li>
           <li>Tampermonkey</li>

@@ -12,7 +12,7 @@ const Layout = ({ children }: PropsWithChildren) => {
       <Meta />
       <Navbar />
       <ReadingProgress containerRef={containerRef} />
-      <main className="mt-navbar wideDesktop:mt-desktopNavbar py-8 min-h-content wideDesktop:min-h-desktopContent text-justify hyphens-auto break-words">
+      <main className="mt-navbar wideDesktop:mt-desktopNavbar py-8 min-h-content wideDesktop:min-h-desktopContent break-words">
         {children}
       </main>
       <Footer />

@@ -28,6 +28,10 @@
     @apply text-1.5xl font-bold leading-loose;
   }
 
+  h3 {
+    @apply text-xl font-bold leading-loose;
+  }
+
   p,
   li {
     @apply text-base leading-relaxed;

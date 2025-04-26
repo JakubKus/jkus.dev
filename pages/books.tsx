@@ -29,6 +29,11 @@ export default function Books() {
           <li><b><i>“Steve Jobs”</i></b> - Walter Isaacson</li>
           <li><b><i>“Total Recall”</i></b> - Arnold Schwarzenegger</li>
           <li><b><i>“E-Myth Revisited”</i></b> - Gerber Michael E.</li>
+          <li><b><i>“The Three-Body Problem”</i></b> - Liu Cixin</li>
+          <li><b><i>“The Courage To Be Disliked”</i></b> - Ichirō Kishimi</li>
+          <li><b><i>“Antifragile”</i></b> - Nassim Nicholas Taleb</li>
+          <li><b><i>“Ego is the enemy”</i></b> - Ryan Holiday</li>
+          <li><b><i>“Rich dad poor dad”</i></b> - Robert Kiyosaki</li>
         </ul>
         <h2>Completed:</h2>
         <h3>2025:</h3>

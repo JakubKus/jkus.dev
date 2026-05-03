@@ -3,7 +3,7 @@
   "short_name": "jkus blog",
   "icons": [
     {
-      "src": "/favicon/jakub.jpg",
+      "src": "/favicon.svg",
       "sizes": "400x400",
       "type": "image/jpg"
     }

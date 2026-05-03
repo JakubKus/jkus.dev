@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --footer-height: 37px;
+    --footer-height: 97px;
     --navbar-height: 57px;
     --desktop-navbar-height: 57px;
     --content-width: 42rem;

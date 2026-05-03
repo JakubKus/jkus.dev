@@ -56,6 +56,7 @@ const Navbar = () => {
         --font-sans: 'Geist', sans-serif;
         --font-mono: 'Geist Mono', monospace;
         --transition: 0.2s ease;
+        --navbar-height: 57px;
       }
 
       [data-theme='dark'] {
@@ -131,8 +132,10 @@ const Navbar = () => {
 
       /* ── Top bar ──────────────────────────────────── */
       header {
-        position: sticky;
+        position: fixed;
         top: 0;
+        min-height: var(--navbar-height);
+        width: 100%;
         z-index: 50;
         border-bottom: 1px solid var(--border);
         background: color-mix(in srgb, var(--bg) 80%, transparent);
@@ -335,10 +338,10 @@ const Navbar = () => {
             </div>
           </nav>
           <div className="mobile-nav" id="mobileNav">
-            <a className="nav-link active" href="/public">
+            <a className="nav-link" href="/">
               About me
             </a>
-            <a className="nav-link" href="/blog">
+            <a className="nav-link active" href="/blog">
               Blog
             </a>
           </div>

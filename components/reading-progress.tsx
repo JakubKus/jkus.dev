@@ -30,7 +30,7 @@ const ReadingProgress = ({ containerRef }: Props) => {
 
   return (
     <span
-      className={`w-full h-[1px] origin-left bg-accent-2 fixed top-navbar desktop:top-desktopNavbar`}
+      className={`w-full h-[1px] origin-left bg-accent-3 fixed top-[calc(var(--navbar-height)-1px)] z-50`}
       style={{ transform: `scaleX(${readingProgress})` }}
     />
   );

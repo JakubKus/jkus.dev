@@ -30,6 +30,7 @@
         --font-sans: 'Geist', sans-serif;
         --font-mono: 'Geist Mono', monospace;
         --transition: 0.2s ease;
+        --navbar-height: 57px;
       }
 
       [data-theme='dark'] {
@@ -105,8 +106,10 @@
 
       /* ── Top bar ──────────────────────────────────── */
       header {
-        position: sticky;
+        position: fixed;
         top: 0;
+        min-height: var(--navbar-height);
+        width: 100%;
         z-index: 50;
         border-bottom: 1px solid var(--border);
         background: color-mix(in srgb, var(--bg) 80%, transparent);
@@ -248,6 +251,7 @@
 
       /* ── Main sections ────────────────────────────── */
       main {
+        margin-top: var(--navbar-height);
         padding-top: 3rem;
         padding-bottom: 4rem;
       }
@@ -572,7 +576,7 @@
         <nav class="nav-inner">
           <span class="nav-logo">jkus<span>.dev</span></span>
           <div class="nav-links">
-            <a class="nav-link active" href="/public">About me</a>
+            <a class="nav-link active" href="/">About me</a>
             <a class="nav-link" href="/blog">Blog</a>
           </div>
           <div class="nav-right">
@@ -623,7 +627,7 @@
           </div>
         </nav>
         <div class="mobile-nav" id="mobileNav">
-          <a class="nav-link active" href="/public">About me</a>
+          <a class="nav-link active" href="/">About me</a>
           <a class="nav-link" href="/blog">Blog</a>
         </div>
       </div>

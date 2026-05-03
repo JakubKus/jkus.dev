@@ -24,6 +24,7 @@ export default function Document() {
         --font-sans: 'Geist', sans-serif;
         --font-mono: 'Geist Mono', monospace;
         --transition: 0.2s ease;
+        --navbar-height: 57px;
       }
 
       [data-theme='dark'] {
@@ -99,6 +100,7 @@ export default function Document() {
 
       /* ── Main sections ────────────────────────────── */
       main {
+        margin-top: var(--navbar-height);
         padding-top: 3rem;
         padding-bottom: 4rem;
       }

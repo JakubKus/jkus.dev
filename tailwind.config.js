@@ -11,15 +11,15 @@ module.exports = {
         navbar: '0 0 5px rgb(0 0 0)',
       },
       colors: {
-        'accent-1': 'rgb(255 255 255 / 90%)',
-        'accent-1-light': 'rgb(255 255 255 / 30%)',
-        'accent-2': 'rgb(50 205 50)',
-        'accent-2-light': 'rgb(50 205 50 / 10%)',
-        'accent-3': 'rgb(51 51 51)',
-        'accent-4': 'rgb(39 40 34)',
+        'accent-1': 'rgb(var(--accent-1) / 90%)',
+        'accent-1-light': 'rgb(var(--accent-1) / 30%)',
+        'accent-2': 'rgb(var(--accent-2))',
+        'accent-2-light': 'rgb(var(--accent-2) / 10%)',
+        'accent-3': 'rgb(var(--accent-3))',
+        'accent-4': 'rgb(var(--accent-4))',
       },
       fontFamily: {
-        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        sans: ['Geist', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         '1.5xl': '1.375rem',

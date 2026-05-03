@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en" className="text-accent-1 h-full" data-theme="dark">
+    <Html lang="en" className="text-accent-2 h-full" data-theme="dark">
       <Head>
         <style>
           {`

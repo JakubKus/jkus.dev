@@ -33,5 +33,5 @@
 }
 
 .markdown :not(pre) > code {
-  @apply rounded p-1 bg-accent-4;
+  @apply rounded p-1 bg-accent-4 text-accent-1;
 }

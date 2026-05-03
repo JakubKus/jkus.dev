@@ -8,9 +8,16 @@ type Props = {
 const Posts = ({ posts }: Props) => {
   return (
     <section>
-      <div className="grid gap-y-8">
-        {posts.map(post => (
-          <PostPreview key={post.slug} title={post.title} date={post.date} slug={post.slug} excerpt={post.excerpt} />
+      <div className="grid">
+        {posts.map((post, idx) => (
+          <PostPreview
+            key={post.slug}
+            title={post.title}
+            date={post.date}
+            slug={post.slug}
+            excerpt={post.excerpt}
+            isLast={idx === posts.length - 1}
+          />
         ))}
       </div>
     </section>

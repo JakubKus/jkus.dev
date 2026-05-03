@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,18 +10,35 @@
     --navbar-height: 3.75rem;
     --desktop-navbar-height: 4.25rem;
     --content-width: 42rem;
+
+    --accent-1: 255 255 255;
+    --accent-2: 161 161 170;
+    --accent-3: 113 113 122;
+    --accent-4: 39 40 34;
+  }
+
+  :root[data-theme="light"] {
+    --accent-1: 9 9 11;
+    --accent-2: 82 82 91; /* --text-muted */
+    --accent-3: 113 113 122; /* --text-subtle */
+    --accent-4: 220 220 215;
   }
 
   a {
-    @apply text-accent-2 hover:no-underline text-left;
+    @apply text-accent-1 hover:no-underline text-left;
   }
 
   @font-face {
-    font-family: Montserrat;
+    font-family: Geist;
+  }
+  
+  body {
+    font-family: 'Geist', sans-serif;
+    color: var(--accent-1)
   }
 
   h1 {
-    @apply text-3xl font-black leading-loose;
+    @apply text-3xl text-accent-1 font-black leading-loose;
   }
 
   h2 {

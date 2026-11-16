@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import SocialLinks from '../social-links';
 import { routes } from '../routes';
 import { useRouter } from 'next/router';
 
@@ -32,9 +31,6 @@ function Menu({ open }: Props) {
           {route.label}
         </Link>
       ))}
-      <div className="py-4 desktop:hidden flex items-center">
-        <SocialLinks mobile />
-      </div>
     </nav>
   );
 }

@@ -1,3 +1,3 @@
-export const SHORT_HEADLINE = 'jkus.dev';
-export const HEADLINE = 'Jakub Kuś - jkus.dev';
+export const SHORT_HEADLINE = 'jakubkus.com';
+export const HEADLINE = 'Jakub Kuś - jakubkus.com';
 export const BIO_LINES = ['Jakub Kuś', 'JS Dev'];

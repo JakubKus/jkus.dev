@@ -282,7 +282,7 @@ const Navbar = () => {
         <div className="container">
           <nav className="nav-inner">
             <span className="nav-logo">
-              jkus<span>.dev</span>
+              jakubkus<span>.com</span>
             </span>
             <div className="nav-links">
               <a className="nav-link" href="/">
